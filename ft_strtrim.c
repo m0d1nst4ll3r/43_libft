@@ -6,7 +6,7 @@
 /*   By: rapohlen <rapohlen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 09:49:16 by rapohlen          #+#    #+#             */
-/*   Updated: 2025/10/27 22:47:47 by rapohlen         ###   ########.fr       */
+/*   Updated: 2025/10/29 14:17:16 by rapohlen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,6 @@ char	*ft_strtrim(const char *s, const char *set)
 	}
 	else
 		end = start;
-	new = ft_substr(s, (unsigned int)start, end - start);
+	new = ft_substr(s, start, end - start);
 	return (new);
 }
