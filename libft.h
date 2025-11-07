@@ -6,14 +6,14 @@
 /*   By: rapohlen <rapohlen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 01:08:36 by rapohlen          #+#    #+#             */
-/*   Updated: 2025/10/27 23:01:01 by rapohlen         ###   ########.fr       */
+/*   Updated: 2025/11/07 12:09:33 by rapohlen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <limits.h>
+# include <stdint.h>
 # include <unistd.h>
 # include <stdlib.h>
 # include <stddef.h>
@@ -22,7 +22,7 @@ typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
-}	t_list;
+}t_list;
 
 // PART 1
 int		ft_isalpha(int c);

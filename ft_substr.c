@@ -6,7 +6,7 @@
 /*   By: rapohlen <rapohlen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 09:42:16 by rapohlen          #+#    #+#             */
-/*   Updated: 2025/10/27 21:36:48 by rapohlen         ###   ########.fr       */
+/*   Updated: 2025/11/06 12:10:18 by rapohlen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,11 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	char	*new;
 
 	if (!s)
+		return (NULL);
+	i = 0;
+	while (s[i] && i < start)
+		i++;
+	if (i < start)
 		return (NULL);
 	i = 0;
 	while (s[start + i] && i < len)
