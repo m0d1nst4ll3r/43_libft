@@ -6,7 +6,7 @@
 #    By: rapohlen <rapohlen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/08 10:29:07 by rapohlen          #+#    #+#              #
-#    Updated: 2025/11/04 11:51:08 by rapohlen         ###   ########.fr        #
+#    Updated: 2025/11/08 18:38:41 by rapohlen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,7 @@ all:		$(NAME)
 $(NAME):	$(OBJ)
 			$(AR) $@ $^
 
-bonus:		$(OBJB)
+bonus:		$(OBJ) $(OBJB)
 			$(AR) $(NAME) $^
 
 clean:
