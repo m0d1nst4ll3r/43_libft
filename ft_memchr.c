@@ -6,7 +6,7 @@
 /*   By: rapohlen <rapohlen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 14:08:37 by rapohlen          #+#    #+#             */
-/*   Updated: 2025/11/04 14:46:00 by rapohlen         ###   ########.fr       */
+/*   Updated: 2025/11/10 13:34:48 by rapohlen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	char	*array;
-	size_t	i;
+	size_t			i;
 
 	if (!s)
 		return (NULL);
@@ -23,7 +23,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		if (array[i] == c)
+		if (array[i] == (char)c)
 			return (array + i);
 		i++;
 	}
