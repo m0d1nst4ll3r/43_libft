@@ -6,7 +6,7 @@
 /*   By: rapohlen <rapohlen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 09:45:24 by rapohlen          #+#    #+#             */
-/*   Updated: 2025/10/15 23:17:50 by rapohlen         ###   ########.fr       */
+/*   Updated: 2025/11/10 13:54:17 by rapohlen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	j = 0;
 	while (s2[j])
 	{
-		new[i + j] = s1[j];
+		new[i + j] = s2[j];
 		j++;
 	}
 	new[i + j] = 0;
